@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+node_modules/
+release-artifacts/
+dist/
+.DS_Store
+Thumbs.db
