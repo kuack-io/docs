@@ -1,0 +1,111 @@
+{
+  "version": "1.x",
+  "docs": [
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "children": [
+        {
+          "id": "what-is-kuack",
+          "title": "What is Kuack?",
+          "path": "intro.md"
+        },
+        {
+          "id": "when-to-use",
+          "title": "When to use Kuack",
+          "path": "when-to-use.md"
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture",
+      "children": [
+        {
+          "id": "architecture-overview",
+          "title": "Architecture overview",
+          "path": "architecture.md"
+        }
+      ]
+    },
+    {
+      "id": "guides",
+      "title": "Getting started",
+      "children": [
+        {
+          "id": "quickstart",
+          "title": "Quickstart: run your first browser pod",
+          "path": "getting-started.md"
+        }
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "Concepts",
+      "children": [
+        {
+          "id": "browser-runtime",
+          "title": "Browser runtime & limits",
+          "path": "concepts/browser-runtime.md"
+        },
+        {
+          "id": "workload-model",
+          "title": "Workload model & images",
+          "path": "concepts/workload-model.md"
+        },
+        {
+          "id": "scheduling-capacity",
+          "title": "Scheduling & capacity",
+          "path": "concepts/scheduling-and-capacity.md"
+        }
+      ]
+    },
+    {
+      "id": "use-cases",
+      "title": "Use cases",
+      "children": [
+        {
+          "id": "distributed-load-testing",
+          "title": "Distributed load testing",
+          "path": "use-cases/distributed-load-testing.md"
+        },
+        {
+          "id": "privacy-processing",
+          "title": "Privacy-preserving processing",
+          "path": "use-cases/privacy-preserving-processing.md"
+        },
+        {
+          "id": "media-preprocessing",
+          "title": "Media & file preprocessing",
+          "path": "use-cases/media-preprocessing.md"
+        },
+        {
+          "id": "cost-optimization",
+          "title": "Cost optimization",
+          "path": "use-cases/cost-optimization.md"
+        },
+        {
+          "id": "edge-computing",
+          "title": "Edge computing",
+          "path": "use-cases/edge-computing.md"
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project",
+      "children": [
+        {
+          "id": "roadmap",
+          "title": "Roadmap",
+          "path": "roadmap.md"
+        },
+        {
+          "id": "project-status",
+          "title": "Project status",
+          "path": "project/status.md"
+        }
+      ]
+    }
+  ]
+}
