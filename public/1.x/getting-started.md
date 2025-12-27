@@ -9,6 +9,8 @@ The commands below are intentionally minimal and focus on the happy path.
 - A Kubernetes cluster (local `kind`, `minikube` or a managed cluster).
 - `kubectl` and `helm` installed.
 
+Note: logs streaming will not work in k3s clusters, because its implementation for konnectivity is non-standard. Support for k3s will be added in later releases. For now, please use in minikube, kind, EKS, GKE or other non-rancher clusters
+
 ## 1. Install Kuack via Helm
 
 Install the chart directly from the OCI registry:
