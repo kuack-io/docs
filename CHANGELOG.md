@@ -1,3 +1,13 @@
+## [1.0.1](https://github.com/kuack-io/docs/compare/1.0.0...1.0.1) (2025-12-27)
+
+### Dependencies
+
+* **deps-dev:** bump @commitlint/config-conventional ([2ede217](https://github.com/kuack-io/docs/commit/2ede2170e9925e1cc6bada0a9f361ebcca9ea798))
+
+### Documentation
+
+* note about k3s ([0bfd774](https://github.com/kuack-io/docs/commit/0bfd7747d28b78d3ce06bf15de453ddc30fdb1e5))
+
 ## 1.0.0 (2025-12-26)
 
 ### Features
