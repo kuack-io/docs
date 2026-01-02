@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/kuack-io/docs/compare/1.0.1...1.0.2) (2026-01-02)
+
+### Chores
+
+* upgrade node ([2bdafa3](https://github.com/kuack-io/docs/commit/2bdafa33add7ae6f2417e00e0bb599d50126f22b))
+
 ## [1.0.1](https://github.com/kuack-io/docs/compare/1.0.0...1.0.1) (2025-12-27)
 
 ### Dependencies
