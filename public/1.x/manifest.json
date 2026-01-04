@@ -88,6 +88,11 @@
           "id": "edge-computing",
           "title": "Edge computing",
           "path": "use-cases/edge-computing.md"
+        },
+        {
+          "id": "existing-containers",
+          "title": "Running existing containers",
+          "path": "use-cases/existing-containers.md"
         }
       ]
     },

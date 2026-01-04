@@ -66,6 +66,15 @@ Kuack leverages the standard OCI (Docker) ecosystem. You build your application 
 
 When you deploy, Kubernetes doesn't care where the Pod runs. If it lands on a standard server, the Linux binary runs. If it lands on Kuack, the WASM binary runs. This provides a seamless **fallback mechanism**.
 
+#### Native WASM vs Container-to-WASM
+
+Kuack supports two types of WASM workloads:
+
+1. **Native WebAssembly** - Applications compiled directly to WASI/WebAssembly for optimal performance
+2. **Container2wasm-converted** - Existing Linux containers converted to WASM using [container2wasm](https://github.com/container2wasm/container2wasm), enabling you to run existing containerized applications (Python, Node.js, compiled binaries, etc.) in browsers without rewriting code
+
+Container2wasm uses CPU emulation (Bochs, TinyEMU, or QEMU) to run a full Linux kernel and container runtime inside the browser's WebAssembly sandbox. This expands what can run on Kuack, but with important limitations: only compatible containers (x86_64, riscv64, or AArch64) work, networking is limited to HTTP/WebSockets, and applications must be single-process and short-lived. See the [workload model documentation](/docs/workload-model) for detailed constraints.
+
 ## The Lifecycle of a Task
 
 1. **User connects:** A user opens your website. The Kuack Agent connects to the Node.
