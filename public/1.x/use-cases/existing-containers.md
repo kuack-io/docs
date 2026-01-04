@@ -128,22 +128,22 @@ Your existing scripts work as-is. No need to:
 
 Container2wasm is ideal for scripts that:
 
-- ✅ Process files or data (CSV, JSON, XML, etc.)
-- ✅ Perform transformations or validations
-- ✅ Run as single-process, short-lived jobs
-- ✅ Use standard libraries (no special hardware requirements)
-- ✅ Output results to stdout or files
-- ✅ Are already containerized and working
+- Process files or data (CSV, JSON, XML, etc.)
+- Perform transformations or validations
+- Run as single-process, short-lived jobs
+- Use standard libraries (no special hardware requirements)
+- Output results to stdout or files
+- Are already containerized and working
 
 ## Limitations to consider
 
 Not all scripts will work. Container2wasm has constraints:
 
-- ❌ **No raw network sockets** - Scripts that need direct TCP/UDP connections won't work
-- ❌ **Single process only** - Multi-process scripts or daemons won't work
-- ❌ **Performance overhead** - CPU emulation adds 10-100x overhead compared to native execution
-- ❌ **Memory limits** - Subject to browser memory constraints (typically 2-4GB)
-- ❌ **Long-running processes** - Not suitable for jobs that run for hours
+- **No raw network sockets** - Scripts that need direct TCP/UDP connections won't work
+- **Single process only** - Multi-process scripts or daemons won't work
+- **Performance overhead** - CPU emulation adds 10-100x overhead compared to native execution
+- **Memory limits** - Subject to browser memory constraints (typically 2-4GB)
+- **Long-running processes** - Not suitable for jobs that run for hours
 
 Always test your converted containers to ensure they work correctly in the browser environment.
 
