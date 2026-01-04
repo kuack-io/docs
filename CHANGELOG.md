@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/kuack-io/docs/compare/1.0.2...1.0.3) (2026-01-04)
+
+### Documentation
+
+* mention container2wasm ([7ffecfd](https://github.com/kuack-io/docs/commit/7ffecfd270555f0028b7d9b6bbbfb381d90cfca7))
+
 ## [1.0.2](https://github.com/kuack-io/docs/compare/1.0.1...1.0.2) (2026-01-02)
 
 ### Chores
