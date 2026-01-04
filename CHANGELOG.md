@@ -1,3 +1,14 @@
+## [1.0.4](https://github.com/kuack-io/docs/compare/1.0.3...1.0.4) (2026-01-04)
+
+### Dependencies
+
+* **deps-dev:** bump @commitlint/cli from 20.2.0 to 20.3.0 ([b59c4e5](https://github.com/kuack-io/docs/commit/b59c4e5db83435002b7004845389fa318417ceca))
+* **deps-dev:** bump @commitlint/config-conventional ([8d92666](https://github.com/kuack-io/docs/commit/8d9266631f85513a042a32ce819231af99bc95f2))
+
+### Documentation
+
+* remove emojis ([3986312](https://github.com/kuack-io/docs/commit/398631217eb85c31914def43c5a7d4543d44c911))
+
 ## [1.0.3](https://github.com/kuack-io/docs/compare/1.0.2...1.0.3) (2026-01-04)
 
 ### Documentation
