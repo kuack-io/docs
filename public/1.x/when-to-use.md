@@ -17,6 +17,7 @@ Examples include:
 - API load generation from many real networks.
 - Local preprocessing of files before upload.
 - Lightweight analytics or scoring on data that already lives in the browser.
+- **Compatible containerized applications** - Thanks to [container2wasm](https://github.com/container2wasm/container2wasm), you can run many Python scripts, Node.js applications, and compiled binaries without rewriting code, subject to browser and container2wasm limitations.
 
 ## Poor fits
 
@@ -37,3 +38,16 @@ A useful mental model is:
 > Kuack is a best-effort, browser-backed compute plane that can offload the right kind of work from your regular nodes.
 
 It is not meant to replace your existing cluster. Instead, it gives you an extra option for where certain jobs can run - especially those that benefit from running close to end-users or from leveraging idle client resources.
+
+### The container2wasm advantage
+
+One of Kuack's key differentiators is its integration with [container2wasm](https://github.com/container2wasm/container2wasm), which can lower the barrier to entry for compatible workloads. Instead of requiring you to rewrite applications to compile to WebAssembly, container2wasm enables you to:
+
+- **Run compatible containerized applications** - Many Python, Node.js, Rust, Go, and other Linux-based containerized applications can run in browsers without modification, if they fit within container2wasm's constraints
+- **Leverage existing tooling** - Use the same Docker images, CI/CD pipelines, and deployment processes you already have (for compatible workloads)
+- **Reduce development time** - No need to learn WebAssembly tooling or rewrite working code (for compatible applications)
+- **Expand use cases** - Run applications that would be impractical to rewrite, such as complex scripts with many dependencies
+
+**Important:** Not all containers can run with container2wasm. Applications requiring raw network sockets, multiple processes, long-running daemons, or direct hardware access will not work. Always test converted containers to verify compatibility.
+
+This makes Kuack practical for a wider range of compatible workloads than would be feasible with native WebAssembly compilation alone, but it is not a universal solution for all containerized applications.
