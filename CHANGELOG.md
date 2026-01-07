@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/kuack-io/docs/compare/1.0.4...1.0.5) (2026-01-07)
+
+### Documentation
+
+* add links to container2wasm ([d6d19ac](https://github.com/kuack-io/docs/commit/d6d19ac6e942197d4ed8e9287f6a80886ddb2151))
+
 ## [1.0.4](https://github.com/kuack-io/docs/compare/1.0.3...1.0.4) (2026-01-04)
 
 ### Dependencies
