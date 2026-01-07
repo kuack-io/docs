@@ -17,7 +17,7 @@ Examples include:
 - API load generation from many real networks.
 - Local preprocessing of files before upload.
 - Lightweight analytics or scoring on data that already lives in the browser.
-- **Compatible containerized applications** - Thanks to [container2wasm](https://github.com/container2wasm/container2wasm), you can run many Python scripts, Node.js applications, and compiled binaries without rewriting code, subject to browser and container2wasm limitations.
+- **Compatible containerized applications** - Thanks to [container2wasm](https://github.com/container2wasm/container2wasm), you can run many Python scripts, Node.js applications, and compiled binaries without rewriting code, subject to browser and container2wasm limitations. See [Container2Wasm Integration](use-cases/existing-containers.md).
 
 ## Poor fits
 
