@@ -15,7 +15,7 @@ Both approaches use the same OCI image format and work seamlessly with Kubernete
 
 ## Running existing containers with container2wasm
 
-**[container2wasm](https://github.com/container2wasm/container2wasm)** is a tool that converts compatible Linux containers into WebAssembly modules. For compatible applications, this enables you to run existing containerized applications in browsers **without rewriting code**, though with important limitations.
+**[container2wasm](https://github.com/container2wasm/container2wasm)** is a tool that converts compatible Linux containers into WebAssembly modules. For compatible applications, this enables you to run existing containerized applications in browsers **without rewriting code**, though with important limitations. [See our Container2Wasm Integration guide](../use-cases/existing-containers.md) for use cases and examples.
 
 ### How it works
 

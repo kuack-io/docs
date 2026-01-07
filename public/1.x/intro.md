@@ -37,7 +37,7 @@ Kubernetes still decides **which** Pods are assigned to the Kuack node. Kuack th
 
 ## Running existing containers without rewriting code
 
-One of Kuack's most powerful features is its integration with **[container2wasm](https://github.com/container2wasm/container2wasm)**, which enables you to run existing Linux containers in browsers **without rewriting a single line of code**.
+One of Kuack's most powerful features is its integration with **[container2wasm](https://github.com/container2wasm/container2wasm)**, which enables you to run existing Linux containers in browsers **without rewriting a single line of code**. Check out the [Container2Wasm Integration](use-cases/existing-containers.md) guide to learn more.
 
 ### The challenge
 
