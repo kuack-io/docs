@@ -1,3 +1,9 @@
+## [1.0.6](https://github.com/kuack-io/docs/compare/1.0.5...1.0.6) (2026-01-16)
+
+### Documentation
+
+* mention c2w-examples repo ([f0c0ab8](https://github.com/kuack-io/docs/commit/f0c0ab8573efbb7b141cc055407e96913266815a))
+
 ## [1.0.5](https://github.com/kuack-io/docs/compare/1.0.4...1.0.5) (2026-01-07)
 
 ### Documentation
