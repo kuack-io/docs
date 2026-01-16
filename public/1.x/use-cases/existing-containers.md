@@ -99,6 +99,18 @@ spec:
 
 The script runs in the user's browser, processing the CSV file locally and producing JSON output without sending raw data to your servers.
 
+## Ready-to-use Examples
+
+We have provided a set of exemplary images converted using `container2wasm` in the `c2w-examples` project. These images are multi-platform (linux/amd64 and wasi/wasm) and can be used directly:
+
+- `ghcr.io/kuack-io/c2w-examples/python:3.14-alpine`
+- `ghcr.io/kuack-io/c2w-examples/busybox:latest`
+- `ghcr.io/kuack-io/c2w-examples/node:24-alpine`
+- `ghcr.io/kuack-io/c2w-examples/ubuntu:24.04`
+- `ghcr.io/kuack-io/c2w-examples/alpine:latest`
+
+You can use these images to test Kuack's capabilities for running standard containers in the browser. For usage examples, check the [E2E tests](https://github.com/kuack-io/e2e/blob/main/features/execution/c2w-examples.feature) in our repository, which execute these images across different platforms.
+
 ## Real-world advantages
 
 ### 1. Zero code changes
