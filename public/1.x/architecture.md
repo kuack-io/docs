@@ -49,7 +49,11 @@ The Node is a Go application implementing the [Virtual Kubelet](https://virtual-
 
 ### 2. Kuack Agent (The Worker)
 
-The Agent is a small TypeScript library that runs on the client side.
+The Agent is a JavaScript library designed to be **embedded in your frontend application**.
+
+> There is a "Standalone Agent" web page provided in the repository, but it is purely for **demonstration purposes**. In production, the agent runs as a background library within your existing site.
+
+It consists of:
 
 - **Connection:** Establishes a persistent WebSocket connection to the Node.
 - **Profiling:** Detects available hardware concurrency (CPU cores) and memory.

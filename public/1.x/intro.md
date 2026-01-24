@@ -27,11 +27,16 @@ Kuack Node implements the Virtual Kubelet interface and registers a single synth
 - Advertises labels and taints so only explicitly targeted Pods land on it.
 - Streams logs back so `kubectl logs` works as expected.
 
-Kuack Agent runs in the browser and:
+Kuack Agent runs in the browser.
 
-- Connects to Kuack Node over WebSocket.
-- Reports approximate CPU, memory and optional GPU capability.
-- Downloads wasm workloads via a registry proxy and executes them in the browser.
+- **Demo**: A standalone page for testing.
+- **Production**: A **library embedded in your frontend**, connecting automatically.
+
+It performs:
+
+- Connections to Kuack Node over WebSocket.
+- Reporting of approximate CPU, memory and optional GPU capability.
+- Downloads of wasm workloads via a registry proxy and execution in the browser.
 
 Kubernetes still decides **which** Pods are assigned to the Kuack node. Kuack then decides **which browser** actually runs each Pod.
 
@@ -95,3 +100,7 @@ Kuack is designed for:
 - **Compatible containerized applications** - Thanks to container2wasm, you can run many Python, Node.js, Rust, Go, and other applications without rewriting them, subject to browser and container2wasm limitations.
 
 The following pages describe when to use Kuack, how the architecture works, and what constraints you should be aware of.
+
+## Production usage
+
+In production, **you do not ask users to visit a special Kuack page**. Instead, you import the Kuack Agent library into your existing web application. It runs silently in the background (web worker), turning every visitor into a temporary node while they browse your site.

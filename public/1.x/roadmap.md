@@ -2,6 +2,16 @@
 
 Kuack is evolving. This roadmap sketches the direction of the project rather than promising firm dates.
 
+## Focus Areas
+
+We have ambitious plans to take Kuack from prototype to production-grade:
+
+- **Registry Separation**: Extracting the internal registry into a standalone, scalable service (currently in-memory).
+- **Distributed Nodes**: Moving from a single-node architecture to a horizontally scalable, distributed system (likely using Redis for coordination).
+- **Persistence**: Implementing caching layer for WASM binaries and logs (currently in-memory).
+- **Log Collection**: Adding sidecar support to run reliable log collectors like Fluentbit or Promtail on the virtual node.
+- **High Concurrency**: Optimizing for millions of concurrent agent connections.
+
 ## Short term
 
 - **Reliability improvements** - better handling of disconnections, clearer pod status reporting and safer retries.
@@ -14,12 +24,3 @@ Kuack is evolving. This roadmap sketches the direction of the project rather tha
 - **Wasm threads support** - taking advantage of wasm threads and `SharedArrayBuffer` where browsers permit them.
 - **Richer scheduling signals** - using more information about agents (latency, stability, device class) to choose where to run a Pod.
 - **Better observability** - improved metrics and debugging tools for understanding behaviour across many agents.
-
-## Longer term
-
-- **Networking and storage integrations** - mapping suitable Kubernetes abstractions (such as `emptyDir`-style storage) onto browser capabilities like the Origin Private File System.
-- **Ecosystem integrations** - smoother interoperability with other wasm-on-Kubernetes projects and tools.
-- **Managed service** - a hosted Kuack control plane that can connect your clusters to a larger pool of participating agents.
-- **Language and framework SDKs** - helper libraries for common languages to make it easier to build Kuack-friendly workloads.
-
-The exact order and scope of these items may change as real-world usage and feedback shape the project.
