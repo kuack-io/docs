@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/kuack-io/docs/compare/1.0.6...1.1.0) (2026-01-24)
+
+### Features
+
+* add c2w documentation ([f8e844c](https://github.com/kuack-io/docs/commit/f8e844c18e85728ab87d9bec699382b1c77f1bd8))
+
 ## [1.0.6](https://github.com/kuack-io/docs/compare/1.0.5...1.0.6) (2026-01-16)
 
 ### Documentation
